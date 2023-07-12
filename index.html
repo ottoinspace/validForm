@@ -12,15 +12,32 @@
 <body>
 
   <section class="container">
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Repellendus nisi explicabo saepe voluptatibus consequuntur et corporis
-      maxime quos, doloribus vitae voluptatum quisquam necessitatibus
-      pariatur veritatis exercitationem beatae officiis suscipit Ea!
-    </p>
+    <h1>Formulario de cadastro</h1>
+    <ul>
+      <li>Nenhum Campo pode estar vazio</li>
+      <li>Usuario so podera conter letras e/ou numeros</li>
+      <li>Usuario devera ter entre 3 e 12 caracteres</li>
+      <li>Senha precisa ter entre 6 e 12 caracteres</li>
+    </ul>
+
+    <form action="/" method="POST" class="formulario">
+      <label>Nome</label>
+      <input type="text" class="nome validar">
+      <label>Sobrenome</label>
+      <input type="text" class="sobrenome validar">
+      <label>CPF</label>
+      <input type="text" class="cpf validar">
+      <label>Usuario</label>
+      <input type="text" class="usuario validar">
+      <label>Senha</label>
+      <input type="password" class="senha validar">
+      <label>Repetir senha</label>
+      <input type="password" class="repetir-senha validar">
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
+  <script src="assets/js/validaCPF.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 
